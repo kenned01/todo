@@ -1,0 +1,109 @@
+html, body, .a-100, #root{
+  height: 100% !important;
+  width: 100% !important;
+  background: linear-gradient(90deg, rgba(109,64,147,1) 0%, rgba(201,44,86,1) 100%);
+  user-select: none;
+}
+
+#root{
+  padding-top: 5%;
+  height: 80% !important;
+}
+
+.header{
+  height: 20% !important;
+  width: 100% !important;
+  color: #fff;
+  padding-top: 5%;
+}
+.a-100{
+  --text: #000;
+  --input: #fff;
+  --border: #ced4da;
+  --image: url("./images/moon-solid.svg");
+}
+
+.a-100.dark{
+  --text: #fff;
+  --input: #25273c;
+  --border: #262840;
+  --image: url("./images/sun-regular.svg");
+}
+
+.mode{
+  background: var(--image);
+  width: 30px;
+  height: 30px;
+  color: #fff;
+  cursor: pointer;
+  transition: all .2s ease-out;
+}
+.todo-c{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+}
+
+.item-card{
+  border: 1px solid rgb(206 212 218);
+  border-radius: 5px ;
+}
+.item-c{
+  border-bottom: 1px solid rgb(206 212 218);
+  padding: 1% 2.5%;
+}
+
+.item-text,.item-button{
+  cursor: pointer;
+  user-select: none;
+}
+.item-text{
+  width: 100%;
+}
+.item-text.done{
+  text-decoration: line-through;
+}
+
+.tabBar p{
+  margin: 0;
+  width: 100%;
+  cursor: pointer;
+  padding: 1% 0%;
+  text-align: center;
+  border-right: 1px solid rgb(206 212 218);
+}
+
+.tabBar p:last-child{
+  border-right: 0px;
+}
+.tabBar p:hover{
+  color: #3F51B5;
+  font-weight: 500;
+}
+
+.item-c:last-child {
+  border-bottom: 0px;
+}
+
+@media (max-width: 576px){
+  .login-card {
+    min-width: 90%;
+  }
+}
+
+.todo-c .form-control, .todo-c .item-card, .tabBar, .todo-c .card{
+  background-color: var(--input);
+  color: var(--text);
+  border-color: var(--border);
+}
+
+.todo-c .tabBar p{
+  background-color: var(--input);
+  color: var(--text);
+}
+
+a[href="https://www.000webhost.com/?utm_source=000webhostapp&utm_campaign=000_logo&utm_medium=website&utm_content=footer_img"] {
+  display: none;
+}
